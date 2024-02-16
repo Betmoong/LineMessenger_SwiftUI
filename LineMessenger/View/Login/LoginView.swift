@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         VStack(alignment: .leading) {
             Group {
@@ -34,6 +36,16 @@ struct LoginView: View {
             } label: {
                 Text("Apple로 로그인")
             }.buttonStyle(LoginButtonStyle(textColor: .bkText, borderColor: .greyLight))
+        }
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItemGroup(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image("back")
+                }
+            }
         }
     }
 }
