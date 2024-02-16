@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5C420FBA2B7EEB85008DD2AF /* LineMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FB92B7EEB85008DD2AF /* LineMessengerApp.swift */; };
-		5C420FBC2B7EEB85008DD2AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FBB2B7EEB85008DD2AF /* ContentView.swift */; };
+		5C420FBC2B7EEB85008DD2AF /* AuthenticatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FBB2B7EEB85008DD2AF /* AuthenticatedView.swift */; };
 		5C420FBE2B7EEB86008DD2AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C420FBD2B7EEB86008DD2AF /* Assets.xcassets */; };
 		5C420FC12B7EEB86008DD2AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C420FC02B7EEB86008DD2AF /* Preview Assets.xcassets */; };
 		5C420FCB2B7EEB86008DD2AF /* LineMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FCA2B7EEB86008DD2AF /* LineMessengerTests.swift */; };
@@ -16,6 +16,9 @@
 		5C420FD72B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FD62B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift */; };
 		5C420FE42B7EEFDB008DD2AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */; };
 		5C420FED2B7EFBAC008DD2AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C420FEC2B7EFBAC008DD2AF /* LaunchScreen.storyboard */; };
+		5C420FF02B7EFCAD008DD2AF /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FEF2B7EFCAD008DD2AF /* DIContainer.swift */; };
+		5C420FF42B7EFCDA008DD2AF /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FF32B7EFCDA008DD2AF /* Services.swift */; };
+		5C420FFA2B7EFE92008DD2AF /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FF92B7EFE92008DD2AF /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 /* Begin PBXFileReference section */
 		5C420FB62B7EEB85008DD2AF /* LineMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C420FB92B7EEB85008DD2AF /* LineMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMessengerApp.swift; sourceTree = "<group>"; };
-		5C420FBB2B7EEB85008DD2AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5C420FBB2B7EEB85008DD2AF /* AuthenticatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedView.swift; sourceTree = "<group>"; };
 		5C420FBD2B7EEB86008DD2AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C420FC02B7EEB86008DD2AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C420FC62B7EEB86008DD2AF /* LineMessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineMessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +51,9 @@
 		5C420FD62B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		5C420FEC2B7EFBAC008DD2AF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5C420FEF2B7EFCAD008DD2AF /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		5C420FF32B7EFCDA008DD2AF /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		5C420FF92B7EFE92008DD2AF /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +104,11 @@
 		5C420FB82B7EEB85008DD2AF /* LineMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				5C420FEE2B7EFCA0008DD2AF /* General */,
+				5C420FF52B7EFE18008DD2AF /* View */,
+				5C420FF22B7EFCD1008DD2AF /* Service */,
 				5C420FE52B7EEFE9008DD2AF /* Resource */,
 				5C420FB92B7EEB85008DD2AF /* LineMessengerApp.swift */,
-				5C420FBB2B7EEB85008DD2AF /* ContentView.swift */,
 				5C420FBF2B7EEB86008DD2AF /* Preview Content */,
 			);
 			path = LineMessenger;
@@ -139,6 +147,39 @@
 				5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		5C420FEE2B7EFCA0008DD2AF /* General */ = {
+			isa = PBXGroup;
+			children = (
+				5C420FEF2B7EFCAD008DD2AF /* DIContainer.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		5C420FF22B7EFCD1008DD2AF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5C420FF32B7EFCDA008DD2AF /* Services.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5C420FF52B7EFE18008DD2AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C420FF82B7EFE69008DD2AF /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C420FF82B7EFE69008DD2AF /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5C420FBB2B7EEB85008DD2AF /* AuthenticatedView.swift */,
+				5C420FF92B7EFE92008DD2AF /* AuthenticationViewModel.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C420FBC2B7EEB85008DD2AF /* ContentView.swift in Sources */,
+				5C420FBC2B7EEB85008DD2AF /* AuthenticatedView.swift in Sources */,
+				5C420FFA2B7EFE92008DD2AF /* AuthenticationViewModel.swift in Sources */,
+				5C420FF42B7EFCDA008DD2AF /* Services.swift in Sources */,
+				5C420FF02B7EFCAD008DD2AF /* DIContainer.swift in Sources */,
 				5C420FBA2B7EEB85008DD2AF /* LineMessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
