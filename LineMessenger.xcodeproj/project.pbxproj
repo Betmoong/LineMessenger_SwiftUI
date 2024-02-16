@@ -14,6 +14,7 @@
 		5C420FCB2B7EEB86008DD2AF /* LineMessengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FCA2B7EEB86008DD2AF /* LineMessengerTests.swift */; };
 		5C420FD52B7EEB87008DD2AF /* LineMessengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FD42B7EEB87008DD2AF /* LineMessengerUITests.swift */; };
 		5C420FD72B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C420FD62B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift */; };
+		5C420FE42B7EEFDB008DD2AF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5C420FD02B7EEB87008DD2AF /* LineMessengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LineMessengerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C420FD42B7EEB87008DD2AF /* LineMessengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMessengerUITests.swift; sourceTree = "<group>"; };
 		5C420FD62B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineMessengerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,9 @@
 		5C420FB82B7EEB85008DD2AF /* LineMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				5C420FE52B7EEFE9008DD2AF /* Resource */,
 				5C420FB92B7EEB85008DD2AF /* LineMessengerApp.swift */,
 				5C420FBB2B7EEB85008DD2AF /* ContentView.swift */,
-				5C420FBD2B7EEB86008DD2AF /* Assets.xcassets */,
 				5C420FBF2B7EEB86008DD2AF /* Preview Content */,
 			);
 			path = LineMessenger;
@@ -125,6 +127,15 @@
 				5C420FD62B7EEB87008DD2AF /* LineMessengerUITestsLaunchTests.swift */,
 			);
 			path = LineMessengerUITests;
+			sourceTree = "<group>";
+		};
+		5C420FE52B7EEFE9008DD2AF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5C420FBD2B7EEB86008DD2AF /* Assets.xcassets */,
+				5C420FE32B7EEFDB008DD2AF /* Colors.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C420FE42B7EEFDB008DD2AF /* Colors.xcassets in Resources */,
 				5C420FC12B7EEB86008DD2AF /* Preview Assets.xcassets in Resources */,
 				5C420FBE2B7EEB86008DD2AF /* Assets.xcassets in Resources */,
 			);
